@@ -9,11 +9,8 @@ int solution(vector<int> number) {
         for(int j=i+1;j<number.size();j++){
             int twin=number[i]+number[j];
             for(int k=j+1;k<number.size();k++){
-                if(k==i || k==j)
-                    continue;
-                if(twin+number[k]==0){
+                if(twin+number[k]==0)
                     answer++;
-                }
             }
         }
     }
